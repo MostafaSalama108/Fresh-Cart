@@ -27,7 +27,7 @@ let {UserLogin , setUserLogin} = useContext(UserContext)
       localStorage.setItem("token" , res.data.token )
       setUserLogin(res.data.token)
       setisLoding(false)
-      navigate('/login')
+      navigate('/Fresh-Cart/login')
       toast.success("Rigester Successfully")
     }
     
