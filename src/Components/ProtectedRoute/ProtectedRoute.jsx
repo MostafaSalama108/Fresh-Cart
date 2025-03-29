@@ -12,7 +12,7 @@ if(localStorage.getItem("token")){
 
 else{
 
-return <Navigate to={"/login"}/>
+return <Navigate to={"/Fresh-Cart/login"}/>
 }
 
 

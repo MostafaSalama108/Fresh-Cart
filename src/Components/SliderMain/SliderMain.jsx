@@ -40,12 +40,12 @@ export default function SliderMain() {
 
   <div className='w-3/4'>
 <Slider {...settings}>
-<img src={slider1} className=' sm:w-full sm:h-[200px] sm:object-cover lg:w-full lg:h-[400px] lg:object-cover'   alt="FOOD" />
-<img src={slider2} className=' sm:w-full sm:h-[200px] sm:object-cover lg:w-full lg:h-[400px] lg:object-cover'   alt="FOOD" />
-<img src={slider3} className=' sm:w-full sm:h-[200px] sm:object-cover lg:w-full lg:h-[400px] lg:object-cover'   alt="FOOD" />
-<img src={slider4} className=' sm:w-full sm:h-[200px] sm:object-cover lg:w-full lg:h-[400px] lg:object-cover'   alt="FOOD" />
-<img src={slider5} className=' sm:w-full sm:h-[200px] sm:object-cover lg:w-full lg:h-[400px] lg:object-cover'   alt="FOOD" />
-<img src={slider6} className=' sm:w-full sm:h-[200px] sm:object-cover lg:w-full lg:h-[400px] lg:object-cover'   alt="FOOD" />
+<img src={slider1} className=' sm:w-full h-[200px] sm:h-[200px] sm:object-cover lg:w-full lg:h-[400px] lg:object-cover'   alt="FOOD" />
+<img src={slider2} className=' sm:w-full h-[200px] sm:h-[200px] sm:object-cover lg:w-full lg:h-[400px] lg:object-cover'   alt="FOOD" />
+<img src={slider3} className=' sm:w-full h-[200px] sm:h-[200px] sm:object-cover lg:w-full lg:h-[400px] lg:object-cover'   alt="FOOD" />
+<img src={slider4} className=' sm:w-full h-[200px] sm:h-[200px] sm:object-cover lg:w-full lg:h-[400px] lg:object-cover'   alt="FOOD" />
+<img src={slider5} className=' sm:w-full h-[200px] sm:h-[200px] sm:object-cover lg:w-full lg:h-[400px] lg:object-cover'   alt="FOOD" />
+<img src={slider6} className=' sm:w-full h-[200px] sm:h-[200px] sm:object-cover lg:w-full lg:h-[400px] lg:object-cover'   alt="FOOD" />
 </Slider>
 </div>
 

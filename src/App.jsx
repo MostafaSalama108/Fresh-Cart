@@ -31,21 +31,21 @@ import UpdatePassword from './Components/UpdatePassword/UpdatePassword';
 
 
 let pro = createBrowserRouter([
-  {path:"" , element: <Layout/>, children: [
-  {index:true, element:    <ProtectedRoute><Home/></ProtectedRoute> },
-  {path: "cart" , element: <ProtectedRoute><Cart/></ProtectedRoute> },
-  {path: "products" , element: <ProtectedRoute><Products/></ProtectedRoute> },
-  {path: "categories" , element: <ProtectedRoute><Categories/></ProtectedRoute> },
-  {path: "brands" , element: <ProtectedRoute><Brands/></ProtectedRoute> },
-  {path: "wishlist" , element: <ProtectedRoute><Wishlist/></ProtectedRoute> },
-  {path: "chekout" , element: <ProtectedRoute><Chekout/></ProtectedRoute> },
-  {path: "allorders" , element: <ProtectedRoute><AllOrders/></ProtectedRoute> },
-  {path: "productdetails/:id/:type" , element: <ProtectedRoute><ProductDetails/></ProtectedRoute> },
-  {path: "login" , element: <Login/>},
-  {path: "register" , element: <Register/>}, 
-  {path: "forgetpassword" , element: <ForgetPassword/>},
-  {path: "resetcode" , element: <Resetcode/>},
-  {path: "updatePassword" , element: <UpdatePassword/>},
+  {path:"/Fresh-Cart" , element: <Layout/>, children: [
+  {path:"/Fresh-Cart", element:    <ProtectedRoute><Home/></ProtectedRoute> },
+  {path: "/Fresh-Cart/cart" , element: <ProtectedRoute><Cart/></ProtectedRoute> },
+  {path: "/Fresh-Cart/products" , element: <ProtectedRoute><Products/></ProtectedRoute> },
+  {path: "/Fresh-Cart/categories" , element: <ProtectedRoute><Categories/></ProtectedRoute> },
+  {path: "/Fresh-Cart/brands" , element: <ProtectedRoute><Brands/></ProtectedRoute> },
+  {path: "/Fresh-Cart/wishlist" , element: <ProtectedRoute><Wishlist/></ProtectedRoute> },
+  {path: "/Fresh-Cart/chekout" , element: <ProtectedRoute><Chekout/></ProtectedRoute> },
+  {path: "/Fresh-Cart/allorders" , element: <ProtectedRoute><AllOrders/></ProtectedRoute> },
+  {path: "/Fresh-Cart/productdetails/:id/:type" , element: <ProtectedRoute><ProductDetails/></ProtectedRoute> },
+  {path: "/Fresh-Cart/login" , element: <Login/>},
+  {path: "/Fresh-Cart/register" , element: <Register/>}, 
+  {path: "/Fresh-Cart/forgetpassword" , element: <ForgetPassword/>},
+  {path: "/Fresh-Cart/resetcode" , element: <Resetcode/>},
+  {path: "/Fresh-Cart/updatePassword" , element: <UpdatePassword/>},
   {path: "*" , element: <Notfound/>}, 
 
 

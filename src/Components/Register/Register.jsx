@@ -84,7 +84,7 @@ let formik = useFormik({
   </div> : null}
   
 
-<div className='border-2 border-emerald-500 shadow-emerald-700 bg-slate-900  rounded-xl shadow-lg mx-auto mt-5 sm:w-[90%] lg:w-[50%] py-11 '>
+<div className='border-2 border-emerald-500 shadow-emerald-700 bg-slate-900  rounded-xl shadow-lg mx-auto mt-5 w-[95%] lg:w-[50%] py-11 '>
 
 
 <h1 className='font-semibold text-white text-center text-4xl mt-3 mb-5' >Register <span className='text-emerald-500'>Now</span> </h1>
@@ -96,7 +96,7 @@ let formik = useFormik({
 
   
 
-  <div className="relative z-0 w-full mb-5 group">
+  <div className="relative z-0 w-full sm:px-3 px-4 mb-5 group">
     <input
      type="text" 
      name="name"
@@ -104,8 +104,8 @@ let formik = useFormik({
      onChange={formik.handleChange}
      onBlur={formik.handleBlur}
      id="name" className="block py-2.5 px-0 w-full text-sm text-white bg-transparent border-0 border-b-2 border-gray-300 appearance-none   focus:outline-none focus:ring-0 focus:border-emerald-600 peer" placeholder=" " required />
-    <label htmlFor="floating_Name" className="peer-focus:font-medium left-0 absolute text-md text-gray-500  duration-300 transform -translate-y-6 scale-75 top-1 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto peer-focus:text-emerald-600 peer-focus:dark:text-emerald-600 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">User Name
-    <span className='ms-72'>    <i className="fa-solid text-xl ms-8 text-slate-400 fa-user"></i>   </span> </label>
+    <label htmlFor="floating_Name" className="peer-focus:font-medium left-0 absolute text-sm text-gray-500  duration-300 transform -translate-y-6 scale-75 top-1 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto peer-focus:text-emerald-600 peer-focus:dark:text-emerald-600 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6 px-4 sm:px-2 ">User Name
+    <span className='sm:ms-72'>    <i className="fa-solid text-xl sm:ms-10 ms-40 text-slate-400 fa-user"></i>   </span> </label>
 
   {formik.errors.name && formik.touched.name ? <div className="p-2 mb-4 text-md text-center  text-red-800 rounded-lg " role="alert">
   <span className="font-medium ">{formik.errors.name}</span> 
@@ -114,7 +114,7 @@ let formik = useFormik({
 
 
 
-  <div className="relative z-0 w-full mb-5 group">
+  <div className="relative z-0 w-full sm:px-3 px-4 mb-5 group">
     <input
      type="email"
      name="email"
@@ -122,8 +122,8 @@ let formik = useFormik({
      onChange={formik.handleChange}
      onBlur={formik.handleBlur}
     id="email" className="block py-2.5 px-0 w-full text-sm text-white bg-transparent border-0 border-b-2 border-gray-300 appearance-none   focus:outline-none focus:ring-0 focus:border-emerald-600 peer" placeholder=" " required />
-    <label htmlFor="floating_email" className="peer-focus:font-medium  absolute left-0 text-md text-gray-500  duration-300 transform -translate-y-6 scale-75 top-1 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto peer-focus:text-emerald-600 peer-focus:dark:text-emerald-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6 ">Email Address
-    <span className='ms-72'>    <i className="fa-solid text-xl text-slate-400 ms-2 fa-at"></i>   </span> </label>
+    <label htmlFor="floating_email" className="peer-focus:font-medium  absolute left-0 text-sm text-gray-500  duration-300 transform -translate-y-6 scale-75 top-1 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto peer-focus:text-emerald-600 peer-focus:dark:text-emerald-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6 px-4 sm:px-2 ">Email Address
+    <span className='sm:ms-72'>    <i className="fa-solid text-xl text-slate-400 sm:ms-6 ms-36 fa-at"></i>   </span> </label>
 
     {formik.errors.email && formik.touched.email  ? <div className="p-2 mb-4 text-md text-center  text-red-800 rounded-lg " role="alert">
   <span className="font-medium ">{formik.errors.email}</span> 
@@ -132,7 +132,7 @@ let formik = useFormik({
 
   
 
-  <div className="relative z-0 w-full mb-5 group">
+  <div className="relative z-0 w-full sm:px-3 px-4 mb-5 group">
     <input
      type="password"
       name="password"
@@ -140,8 +140,8 @@ let formik = useFormik({
       onChange={formik.handleChange}
      onBlur={formik.handleBlur}
        id="password" className="block py-2.5 px-0 w-full text-sm text-white bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white   focus:outline-none focus:ring-0 focus:border-emerald-600 peer" placeholder=" " required />
-    <label htmlFor="floating_password" className="peer-focus:font-medium absolute left-0 text-md text-gray-500  duration-300 transform -translate-y-6 scale-75 top-1 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto peer-focus:text-emerald-600 peer-focus:dark:text-emerald-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Password
-    <span className='ms-72'>    <i className="fa-solid ms-10 text-slate-400 text-xl  fa-lock"></i>   </span></label>
+    <label htmlFor="floating_password" className="peer-focus:font-medium absolute left-0 text-sm text-gray-500  duration-300 transform -translate-y-6 scale-75 top-1 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto peer-focus:text-emerald-600 peer-focus:dark:text-emerald-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6 px-4 sm:px-2">Password
+    <span className='sm:ms-72'>    <i className="fa-solid sm:ms-12 ms-[11rem] text-slate-400 text-xl  fa-lock"></i>   </span></label>
 
     {formik.errors.password && formik.touched.password  ? <div className="p-2 mb-4 text-md text-center  text-red-800 rounded-lg " role="alert">
   <span className="font-medium ">{formik.errors.password}</span> 
@@ -149,7 +149,7 @@ let formik = useFormik({
   </div>
 
 
-  <div className="relative z-0 w-full mb-5 group">
+  <div className="relative z-0 w-full mb-5 sm:px-3 px-4 group">
     <input
      type="password"
       name="rePassword"
@@ -157,7 +157,7 @@ let formik = useFormik({
       onChange={formik.handleChange}
      onBlur={formik.handleBlur}
        id="rePassword" className="block py-2.5 px-0 w-full text-sm text-white bg-transparent border-0 border-b-2 border-gray-300 appearance-none    focus:outline-none focus:ring-0 focus:border-emerald-600 peer" placeholder=" " required />
-    <label htmlFor="floating_re-password" className="peer-focus:font-medium absolute left-0 text-md text-gray-500 duration-300 transform -translate-y-6 scale-75 top-1 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto peer-focus:text-emerald-600 peer-focus:dark:text-emerald-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">re-Password
+    <label htmlFor="floating_re-password" className="peer-focus:font-medium absolute left-0 text-sm text-gray-500 duration-300 transform -translate-y-6 scale-75 top-1 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto peer-focus:text-emerald-600 peer-focus:dark:text-emerald-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6 px-4 sm:px-2">re-Password
     </label>
 
     {formik.errors.rePassword  && formik.touched.rePassword  ? <div className="p-2 mb-4 text-md text-center  text-red-800 rounded-lg " role="alert">
@@ -166,7 +166,7 @@ let formik = useFormik({
   </div>
 
 
-  <div className="relative z-0 w-full mb-5 group">
+  <div className="relative z-0 w-full mb-5 sm:px-3 px-4 group">
     <input
      type="tel" 
      name="phone"
@@ -174,8 +174,8 @@ let formik = useFormik({
      onChange={formik.handleChange}
      onBlur={formik.handleBlur}
       id="phone" className="block py-2.5 px-0 w-full text-sm  text-white bg-transparent border-0 border-b-2 border-gray-50 appearance-none  focus:outline-none focus:ring-0 focus:border-emerald-600 peer" placeholder=" " required />
-    <label htmlFor="floating_phone" className="peer-focus:font-medium  absolute left-0 text-md text-gray-500  duration-300 transform -translate-y-6 scale-75 top-1 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto peer-focus:text-emerald-600 peer-focus:dark:text-emerald-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Phone Number
-    <span className='ms-72'>    <i className="fa-solid text-slate-400  text-xl fa-phone"></i>   </span> </label>
+    <label htmlFor="floating_phone" className="peer-focus:font-medium  absolute left-0 text-sm text-gray-500  duration-300 transform -translate-y-6 scale-75 top-1 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto peer-focus:text-emerald-600 peer-focus:dark:text-emerald-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6 px-4 sm:px-2">Phone Number
+    <span className='sm:ms-72'>    <i className="fa-solid text-slate-400 sm:ms-6 ms-36  text-xl fa-phone"></i>   </span> </label>
 
     {formik.errors.phone  && formik.touched.phone  ?  <div className="p-2 mb-4 text-md text-center  text-red-800 rounded-lg " role="alert">
   <span className="font-medium ">{formik.errors.phone}</span> 
@@ -184,9 +184,9 @@ let formik = useFormik({
 
 
 <div className='text-center mt-8 '>
-<button type="submit" className="text-white bg-emerald-700 px-11 hover:bg-emerald-800 focus:ring-4 focus:outline-none focus:ring-emborder-emerald-300 font-bold rounded-lg text-sm w-full sm:w-auto  py-2.5 text-center ">{isLoding ? <i className='fas fa-spinner fa-spin'></i> : "Register" }</button>
+<button type="submit" className="text-white bg-emerald-700 px-11 hover:bg-emerald-800 focus:ring-4 focus:outline-none focus:ring-emborder-emerald-300 font-bold rounded-lg text-sm  sm:w-auto  py-2.5 text-center ">{isLoding ? <i className='fas fa-spinner fa-spin'></i> : "Register" }</button>
 </div>
-<div className='mt-5 text-center'><Link to="/login"><span className='text-emerald-600 hover:text-white underline '>Do You Have Account? Login Now</span></Link> </div>
+<div className='mt-5 text-center'><Link to="/Fresh-Cart/login"><span className='text-emerald-600 hover:text-white underline '>Do You Have Account? Login Now</span></Link> </div>
 
   
 </form>

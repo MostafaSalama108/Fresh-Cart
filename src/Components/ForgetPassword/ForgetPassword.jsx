@@ -33,7 +33,7 @@ let {fpassword} = useContext(UserContext)
 
   if(res.data.statusMsg == "success" ){
     toast.success(res.data.message)
-    navigate("/resetcode")
+    navigate("/Fresh-Cart/resetcode")
   }
 
  else{
@@ -82,7 +82,7 @@ let formik = useFormik({
   return <>
  
 
-  <h1 className='text-center text-5xl mb-12 font-bold text-white capitalize mt-8' >please enter your verification code</h1>
+  <h1 className='text-center sm:text-5xl text-2xl mb-12 font-bold text-white capitalize mt-8' >please enter your verification code</h1>
 
     <div>
 
@@ -118,7 +118,7 @@ let formik = useFormik({
 
 <div className=' text-center mt-11 '>
 
-<button  type="Login" className="text-white bg-emerald-700 hover:bg-emerald-800 focus:ring-4 focus:outline-none  focus:ring-emerald-300 font-medium rounded-lg text-sm w-full sm:w-auto px-11 py-2.5" > { isspiner ? <i className='fa fa-spinner fa-spin'></i> : "Virify"  } </button>
+<button  type="Login" className="text-white bg-emerald-700 hover:bg-emerald-800 focus:ring-4 focus:outline-none  focus:ring-emerald-300 font-medium rounded-lg text-sm  sm:w-auto px-11  py-2.5" > { isspiner ? <i className='fa fa-spinner fa-spin'></i> : "Virify"  } </button>
 
 </div>
 

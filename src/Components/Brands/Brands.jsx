@@ -45,7 +45,7 @@ useEffect(()=>{
   return <>
      <h1 className='text-white text-5xl mt-8 text-center mb-11' >ALL <span className='text-emerald-500'>Brands</span> </h1>
 
-     <div className='row'>
+     <div className='row px-6'>
        
     {  allBrands.length > 0 ? allBrands?.map((brand)=> <div key={brand._id} className='w-full   sm:w-1/2 sm:px-6 sm:mb-5 md:w-1/2 lg:w-1/6 px-4 mb-5' >
 

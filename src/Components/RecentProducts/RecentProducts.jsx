@@ -108,13 +108,14 @@ else{toast.error(x.data.message)
   return <>
 
 
-<div className='row sm:p-11 lg:p-2'>
+<div className='row sm:p-11 p-11 lg:p-2'>
 
 {products.length > 0 ?  products?.map((product)=>
 <div key={product.id} className='w-full box  mb-10 lg:mt-16 sm:mt-5 rounded-2xl  sm:w-1/2   lg:w-1/6'>
 <div data-aos="zoom-out-right">
-<div  className='product lg:p-6 sm:p-8  ' >
-<Link to= {`/productdetails/${product.id}/${product.category.name}`} >
+<div  className='product lg:p-6 sm:p-8 p-8  ' >
+
+<Link to= {`/Fresh-Cart/productdetails/${product.id}/${product.category.name}`} >
         <img src={product?.imageCover} className=' w-full mt-3 sm:rounded-md  img  lg:px-0   ' alt="" />
         <h3 className=' text-emerald-600 mt-5'>{product?.category?.name}</h3>
         <div>

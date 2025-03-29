@@ -47,12 +47,12 @@ useEffect(()=>{
 
 
   return <>
-  <h2 className=' sm:mt-10 lg:mt-20 my-3 capitalize font-semibold text-2xl text-gray-300'>shop popular categories.</h2>
+  <h2 className=' sm:mt-10 lg:mt-20 my-3 capitalize font-semibold sm:text-2xl text-md text-gray-300'>shop popular categories.</h2>
    <Slider {...settings}>
    {allCategory.map((category)=>
   <div key={category._id}>
-    <img src={category.image} className='w-full p-1 rounded-lg sm:h-[150px] lg:h-[250px] object-cover   ' alt="categories" />
-     <div className='text-center mt-3'><span className=' text-white'>{category.name}</span></div>
+    <img src={category.image} className='sm:w-full rounded-md   sm:rounded-md h-[150px] sm:h-[150px] px-1   lg:h-[250px]   object-cover ' alt="categories" />
+     <div className='text-center mt-2 mb-5'><span className=' text-[10px] sm:text-sm   text-white'>{category.name.split(" ").slice(0 , 1 ).join(" ")}</span></div>
   </div>)}
    </Slider>
 

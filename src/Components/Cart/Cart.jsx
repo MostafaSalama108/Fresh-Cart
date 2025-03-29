@@ -89,27 +89,27 @@ useEffect(()=>{
 
   {cartDetiels?.products.length > 0 ? <>
     <div className='py-5 text-center mt-8'>
-<h2 className='text-emerald-600 text-3xl font-bold'> <span className='text-red-600 font-bold text-3xl' >Total Cart Price:</span> {cartDetiels?.totalCartPrice} EGP</h2>
+<h2 className='text-emerald-600 sm:text-3xl text-md font-bold'> <span className='text-red-600 font-bold text-md sm:text-3xl' >Total Cart Price:</span> {cartDetiels?.totalCartPrice} EGP</h2>
 </div>
   
-<div className="relative overflow-x-auto shadow-md sm:rounded-lg">
+<div className="relative overflow-x-auto shadow-md sm:rounded-lg rounded-lg">
   <table className="w-full text-sm text-left rtl:text-right text-gray-50 dark:text-gray-400">
     <thead className="text-xs  uppercase  bg-gray-700 text-gray-300">
 
       <tr>
-        <th scope="col" className="px-16 py-3">
+        <th scope="col" className="px-10 sm:px-16 py-3">
           <span className="sr-only">Image</span>
         </th>
-        <th scope="col" className="px-6 py-3">
+        <th scope="col" className="sm:px-6 px-6 sm:py-3 py-3">
           Product
         </th>
-        <th scope="col" className="px-6 py-3">
+        <th scope="col" className="sm:px-10 px-10 sm:py-3 py-3">
           Qty
         </th>
-        <th scope="col" className="px-6 py-3">
+        <th scope="col" className="sm:px-6 px-6 sm:py-3 py-3">
           Price
         </th>
-        <th scope="col" className="px-6 py-3">
+        <th scope="col" className="sm:px-6 px-6 sm:py-3 py-3">
           Action
         </th>
       </tr>
@@ -120,11 +120,11 @@ useEffect(()=>{
 
     {cartDetiels?.products?.map((product)=>
        <tr key={product.product._id} className=" border-b bg-gray-800 border-gray-600  hover:bg-gray-600">
-        <td className="p-4">
+        <td className="sm:p-3 p-2">
           <img src={product?.product?.imageCover} className="w-16 md:w-32 max-w-full max-h-full" alt="Woman Shawl" />
         </td>
 
-        <td className="px-6 py-4 font-semibold text-white">
+        <td className="px-1 py-4 font-semibold text-white">
         {product?.product?.title.split(" ").slice(0 , 2 ).join(" ")}
         </td>
 
@@ -158,7 +158,7 @@ useEffect(()=>{
         </td>
 
         <td className="px-6 py-4">
-          <button onClick={()=>deleteCart(product.product._id)} className=" cursor-pointer text-red-600 dark:text-red-500  hover:underline font-bold"> <i className="fa-solid text-red-600 fa-trash-can text-2xl"></i> </button>
+          <button onClick={()=>deleteCart(product.product._id)} className=" cursor-pointer text-red-600 dark:text-red-500  hover:underline font-bold"> <i className="fa-solid text-red-600 fa-trash-can text-lg sm:text-2xl"></i> </button>
         </td>
 
       </tr> )}
@@ -169,10 +169,10 @@ useEffect(()=>{
   </table>
 
 </div>
-<Link to={"/chekout"}>  <button className='w-full text-white mt-8 bg-emerald-600 rounded-md cursor-pointer font-bold py-2 '>Chekout</button></Link>
+<Link to={"/Fresh-Cart/chekout"}>  <button className='w-full text-white mt-8 bg-emerald-600 rounded-md cursor-pointer font-bold py-2 '>Chekout</button></Link>
 
 
-</> :  <h2 className='text-red-700 font-bold text-center mt-24 text-5xl  py-24'>  Not Found Products</h2> }
+</> :  <h2 className='text-red-700 font-bold text-center mt-24 sm:text-6xl text-3xl  py-24'>  Not Found Products</h2> }
 
 
 
