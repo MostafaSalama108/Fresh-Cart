@@ -4,8 +4,9 @@ import { useFormik } from 'formik'
 import * as yup from 'yup'
 import axios from 'axios'
 import { Link, useNavigate } from 'react-router-dom'
-import { toast } from 'react-toastify'
+
 import { UserContext } from '../Context/UserContext/UserContext'
+import toast from 'react-hot-toast'
 
 
 
@@ -24,8 +25,8 @@ let {UserLogin , setUserLogin} = useContext(UserContext)
    await axios.post(`https://ecommerce.routemisr.com/api/v1/auth/signup` , values)
    .then((res)=>{
     if(res.data.message =="success" ){
-      localStorage.setItem("token" , res.data.token )
-      setUserLogin(res.data.token)
+      // localStorage.setItem("token" , res.data.token )
+      // setUserLogin(res.data.token)
       setisLoding(false)
       navigate('/Fresh-Cart/login')
       toast.success("Rigester Successfully")
